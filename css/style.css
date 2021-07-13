@@ -1,0 +1,145 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+}
+/* header design start */
+header {
+  position: relative;
+  width: calc(100%);
+}
+/* header top row design */
+.top-header-row {
+  padding: 10px 10px;
+  border-bottom: 1px solid #cddcf0;
+  font-weight: 600;
+  margin: 0;
+}
+.top-header-row i {
+  color: #ee90b6;
+  font-size: 18px;
+}
+.left-header {
+  color: #283e9a;
+  cursor: pointer;
+}
+.right-header-div span {
+  color: #000000;
+  cursor: pointer;
+}
+/*  */
+/* header mid row design */
+.mid-header-row {
+  padding: 10px;
+  margin-right: 0;
+  height: 90px;
+}
+.left-nav {
+  /* width: 150px; */
+  padding-top: 10px;
+}
+.left-nav i {
+  margin: 10px;
+  color: #112783;
+}
+.mid-nav img {
+  width: 100px;
+  margin: 0 auto;
+}
+.right-nav {
+  /* width: 260px; */
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 0;
+  display: flex;
+}
+.right-nav input {
+  border: 1px solid #afafaf;
+  width: 100%;
+  padding: 5px 10px 5px 40px;
+  outline: none;
+  height: 45px;
+}
+.right-nav input::placeholder {
+  text-align: right;
+  color: #afafaf;
+}
+.header-search-icon {
+  position: relative;
+  top: -45px;
+  left: 10px;
+  color: #112783;
+}
+.right-nav i {
+  cursor: pointer;
+  margin-top: 15px;
+  color: #112783;
+}
+.bottom-header-row {
+  background: #2eaa79;
+  padding: 10px 15px;
+  margin-right: 0;
+  text-align: center;
+}
+.bottom-header-row > ul {
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 0;
+  display: block;
+  text-align: center;
+}
+.bottom-header-row > ul > li {
+  list-style: none;
+  display: inline-flex;
+  clear: both;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 0;
+}
+.bottom-header-row > ul > li > a {
+  text-decoration: none;
+  color: #ffffff;
+  height: 100%;
+  width: 100%;
+  padding: 0.5rem 1.25rem;
+  outline: none;
+}
+.bottom-header-row > ul > li > a i {
+  color: white;
+  font-size: 24px;
+}
+.bottom-header-row > ul > li > a:hover {
+  background: darkslategrey;
+}
+/*  */
+.cursor-pointer {
+  cursor: pointer;
+}
+/* end */
+@media screen and (min-width: 0px) and (max-width: 992px) {
+  .mid-header-row {
+    height: 150px;
+  }
+  .bottom-header-row {
+    position: fixed;
+    top: 0;
+    display: none;
+    transform: translateY(0%);
+    transition: 0.4s;
+    opacity: 0.9;
+  }
+  .menu-nav {
+    display: flex !important;
+    height: 100vh;
+    width: 100vw !important;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    list-style-type: none;
+    padding-right: 1rem !important;
+    transform: translateY(0%);
+    transition: 0.4s;
+  }
+}
