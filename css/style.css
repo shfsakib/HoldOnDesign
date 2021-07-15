@@ -125,7 +125,7 @@ header {
   background: transparent;
 }
 #carouselExampleIndicators img {
-  max-height: 500px !important;
+  max-height: 550px !important;
 }
 
 [data-target="#carouselExampleIndicators"] {
