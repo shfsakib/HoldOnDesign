@@ -34,6 +34,7 @@ header {
   padding: 10px;
   margin-right: 0;
   height: 90px;
+  box-shadow: 1px 1px 5px 1px gainsboro;
 }
 .left-nav {
   /* width: 150px; */
@@ -81,6 +82,9 @@ header {
   padding: 10px 15px;
   margin-right: 0;
   text-align: center;
+  display: block;
+  opacity: 1;
+  z-index: 999;
 }
 .bottom-header-row > ul {
   margin: 0 auto;
@@ -113,8 +117,117 @@ header {
   background: darkslategrey;
 }
 /*  */
+/* slide design */
+.top-slider {
+  width: calc(100%) !important;
+  height: auto !important;
+  min-height: 300px;
+  background: transparent;
+}
+#carouselExampleIndicators img {
+  max-height: 400px !important;
+}
+
+[data-target="#carouselExampleIndicators"] {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50%;
+}
+
+.carousel-control-next {
+  background-image: none !important;
+  color: #2eaa79;
+  opacity: 1 !important;
+}
+
+.carousel-control-prev {
+  background-image: none !important;
+  color: #2eaa79;
+  opacity: 1 !important;
+}
+.carousel-control-prev-icon {
+  background-image: none !important;
+}
+.carousel-control-next-icon {
+  background-image: none !important;
+}
+.carousel-control-next:focus,
+.carousel-control-next:hover,
+.carousel-control-prev:focus,
+.carousel-control-prev:hover {
+  color: #2eaa79 !important;
+}
+.carousel-item h3 {
+  position: absolute;
+  width: 50%;
+  text-align: right;
+  top: 100px;
+  color: #112783;
+}
+.blue-button {
+  border: 2px solid #112783;
+  color: #112783;
+  background: transparent;
+  padding: 5px 10px;
+  font-size: 16px;
+  outline: none;
+  font-weight: 600;
+}
+.carousel-item button:hover {
+  background: #112783;
+  color: #ffffff;
+}
+/*  */
+/* friend row design */
+.friend-div {
+  padding: 5px 100px !important;
+}
+.friend-row {
+  background-image: url("/images/bg2.svg");
+}
+.friend-row h4 {
+  max-width: 600px;
+  color: #fff;
+}
+.friend-card {
+  height: auto;
+  min-height: 100px !important;
+  margin: 0 auto;
+  width: 300px;
+}
+.friend-image {
+  width: 100%;
+  height: 300px;
+}
+.friend-body h6 {
+  overflow: hidden;
+  white-space: normal;
+  position: relative;
+  font-size: 14px;
+  text-align: center;
+  height: 36px;
+  line-height: 18px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-weight: 600;
+}
+.white-button {
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  background: transparent;
+  padding: 5px 10px;
+  font-size: 16px;
+  outline: none;
+  font-weight: 600;
+}
+/*  */
+/*  */
 .cursor-pointer {
   cursor: pointer;
+}
+.color-white {
+  color: #fff;
 }
 /* end */
 @media screen and (min-width: 0px) and (max-width: 992px) {

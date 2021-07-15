@@ -27,10 +27,10 @@ $(document).ready(function () {
         showMenu = false;
     })
     $(window).resize(function () {
-        if ($('body').width() < 992) {
+        if ($('body').width() < 992) { 
             nav.css('display', 'none'); 
             showMenu = false;
-        } else {
+        } else if ($('body').width() > 992){ 
             nav.css('display', 'block');
             nav.css('opacity', '1');
             showMenu = false;
