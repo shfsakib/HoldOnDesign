@@ -34,7 +34,6 @@ header {
   padding: 10px;
   margin-right: 0;
   height: 90px;
-  box-shadow: 1px 1px 5px 1px gainsboro;
 }
 .left-nav {
   /* width: 150px; */
@@ -127,6 +126,9 @@ header {
 #carouselExampleIndicators img {
   max-height: 550px !important;
 }
+#carouselExampleControls img {
+  max-height: 250px !important;
+}
 
 [data-target="#carouselExampleIndicators"] {
   width: 10px !important;
@@ -173,17 +175,23 @@ header {
   outline: none;
   font-weight: 600;
 }
-.carousel-item button:hover {
+.blue-button:hover {
   background: #112783;
   color: #ffffff;
 }
 /*  */
+.lifestyle-img {
+  width: 100%;
+  height: 290px;
+  background-size: cover;
+}
 /* friend row design */
 .friend-div {
   padding: 5px 100px !important;
 }
 .friend-row {
   background-image: url("/images/bg2.svg");
+  background-attachment: fixed;
 }
 .friend-row h4 {
   max-width: 600px;
@@ -230,6 +238,7 @@ header {
 .number-row {
   background-image: url("/images/bg3.png");
   background-size: cover;
+  background-attachment: fixed;
 }
 .number-image {
   border-radius: 50%;
@@ -249,11 +258,125 @@ iframe div .player {
   max-width: calc(100vw) !important;
 }
 /*  */
+/* case list design */
+.case-bg {
+  position: absolute;
+  bottom: 90px;
+  right: 0;
+  max-height: 490px;
+  max-width: 700px;
+}
+/*  */
+.product-image {
+  height: 150px;
+}
+#carouselExampleControls .carousel-control-next-icon {
+  position: absolute;
+  right: 20px;
+}
+#carouselExampleControls .carousel-control-prev-icon {
+  position: absolute;
+  left: 20px;
+}
+/*  */
+.premium-div img {
+  background-attachment: fixed;
+  max-height: 550px;
+  width: 100%;
+}
+.premium-div h4 {
+  max-width: 300px;
+  text-align: right;
+  position: absolute;
+  right: 10%;
+  top: 40%;
+}
+/*  */
+.contact-row{
+  max-height: 430px;
+}
+.contact-left-div {
+  background: #283e9a;
+  padding: 50px;
+}
+.contact-input {
+  width: 100%;
+  padding: 5px 10px;
+  border: 2px solid #ffffff;
+  outline: none;
+  background: transparent;
+  text-align: right;
+  color: #ffffff;
+}
+.pink-button {
+  border: 2px solid #ee90b6;
+  background: #ee90b6;
+  color: #ffffff; 
+  padding: 5px 10px;
+  font-size: 16px;
+  outline: none;
+  font-weight: 600;
+}
+.pink-button:hover {
+  background: transparent;
+  color: #ffffff;
+}
+.contact-img-div{
+  background-image: url('../images/contact.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* .contact-img {
+  width: 100%;
+  max-height: 430px;  
+} */
+/*  */
+.footer-div{
+  background: #2EAA79;
+  padding:50px;
+}
+.footer-div a:hover{
+  text-decoration: none;
+  color: white;
+}
+.element-bottom{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.footer-logo{
+  width: 100%;
+  height: 100%;
+}
+.footer-logo-div img{
+  width: 40px; 
+}
+/*  */
+
 .cursor-pointer {
   cursor: pointer;
 }
 .color-white {
   color: #fff;
+}
+.color-blue {
+  color: #283e9a;
+}
+.color-pink {
+  color: #ee90b6;
+}
+.bg-blue {
+  background: #283e9a;
+  color: #ffffff;
+}
+
+::-webkit-scrollbar{
+  width: 5px;
+  background-color: gainsboro;
+}
+::-webkit-scrollbar-thumb{
+  background: #000000;
 }
 /* end */
 @media screen and (min-width: 0px) and (max-width: 992px) {
@@ -280,5 +403,8 @@ iframe div .player {
     padding-right: 1rem !important;
     transform: translateY(0%);
     transition: 0.4s;
+  }
+  .case-bg {
+    width: 500px;
   }
 }
