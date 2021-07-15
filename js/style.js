@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    $('iframe .player').css('max-width', '100vw!important')
     //Menu hamburger animation start
     const menuBtn = $('.menu-btn');
     const hamburger = $(".menu-btn_burger");
@@ -27,10 +28,10 @@ $(document).ready(function () {
         showMenu = false;
     })
     $(window).resize(function () {
-        if ($('body').width() < 992) { 
-            nav.css('display', 'none'); 
+        if ($('body').width() < 992) {
+            nav.css('display', 'none');
             showMenu = false;
-        } else if ($('body').width() > 992){ 
+        } else if ($('body').width() > 992) {
             nav.css('display', 'block');
             nav.css('opacity', '1');
             showMenu = false;
