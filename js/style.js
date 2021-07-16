@@ -27,6 +27,28 @@ $(document).ready(function () {
         }, 300)
         showMenu = false;
     })
+
+    //banner click
+    var src = $(".image-list-div ul li img").first().attr('src');
+    $(".image-list-div ul li img").first().css({ "border": "3px solid #495057", "height": "80px" });
+    $(".large-banner").attr('src', src);
+    var listImage = ".image-list-div ul li img";
+    $(listImage).click(function () {
+        $(".large-banner").attr('src', $(this).attr('src'));
+        $(listImage).css({ "border": "none", "height": "100px" });
+        $(this).css({ "border": "3px solid #495057", "height": "80px" });
+    });
+    $('.horizontal-div').on('mousewheel DOMMouseScroll', function (event) {
+        var delta = Math.max(-1, Math.min(1, (event.originalEvent.wheelDelta || -event.originalEvent.detail)));
+        $(this).scrollLeft($(this).scrollLeft() - (delta * 40));
+        event.preventDefault();
+
+    });
+    //
+    $('.toggle-button').click(function () {
+        $(this).toggleClass('fa-plus fa-minus');
+    });
+    //
     $(window).resize(function () {
         if ($('body').width() < 992) {
             nav.css('display', 'none');
