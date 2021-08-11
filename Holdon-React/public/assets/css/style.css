@@ -127,6 +127,7 @@ header i {
   background: transparent;
 }
 #carouselExampleIndicators img {
+  height: 550px!important;
   max-height: 550px !important;
 }
 #carouselExampleControls img {
@@ -210,7 +211,7 @@ button:active,button:focus{
   padding: 5px 100px !important;
 }
 .friend-row {
-  background-image: url("/images/bg2.svg");
+  background-image: url("/assets/images/bg2.svg");
   background-attachment: fixed;
 }
 .friend-row h4 {
@@ -710,6 +711,17 @@ a {
 
 /* end */
 @media screen and (min-width: 0px) and (max-width: 992px) {
+  #carouselExampleIndicators img {
+    height: 300px!important;
+    max-height:300px !important;
+  }
+  .carousel-item h3 {
+    position: absolute;
+    width: 50%;
+    text-align: right;
+    top:40px;
+    color: #112783;
+  }
   .mid-header-row {
     height: 150px;
   }
