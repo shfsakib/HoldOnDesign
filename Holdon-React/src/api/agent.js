@@ -19,6 +19,11 @@ const Auth = {
     login: (credentials) => requests.post('auth/login', credentials),
 }
 
+const Home = {
+  products: () => requests.get(`product/home`),
+}
+
 export default {
     Auth,
+    Home,
 }

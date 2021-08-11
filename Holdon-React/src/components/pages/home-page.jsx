@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import Products from '../features/home/products';
 
 const HomePage = () => {
   return (
@@ -216,111 +217,7 @@ const HomePage = () => {
           />
         </div>
       </div>
-      <div className='row mr-0 case-row'>
-        <div className='col-12 p-2 text-center bg-blue'>
-          <h3>המארזים שלנו</h3>
-        </div>
-        <div className='col-12 case-product-div'>
-          <div className='row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-3 friend-div'>
-            <div className='col p-3'>
-              <div className='friend-card'>
-                <img
-                  className='card-img-top friend-image'
-                  src={'assets/images/fr1.png'}
-                  alt='brand'
-                />
-                <div className='card-body friend-body text-center'>
-                  <h4 className='color-blue'>שייק חיזוק</h4>
-                  <h6 className='color-pink'>
-                    115 ש״ח | 100 ש״ח לחברים מועדפים
-                  </h6>
-                  <h6 className>
-                    חבר שיעזור לך לשמר מסת שריר בריאה לשמירה על גוף חטוב ויעיל
-                  </h6>
-                  <button className='blue-button'>
-                    כן, אני רוצה אותך כחבר &gt;
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div className='col p-3'>
-              <div className='friend-card'>
-                <img
-                  className='card-img-top friend-image'
-                  src={'assets/images/fr2.png'}
-                  alt='brand'
-                />
-                <div className='card-body friend-body text-center'>
-                  <h4 className='color-blue'>חטיף לשובע</h4>
-                  <h6 className='color-pink'>
-                    115 ש״ח | 100 ש״ח לחברים מועדפים
-                  </h6>
-                  <h6 className>
-                    חבר לארוחת בינים משביעה, סופר טעימה ומאוד מזינה עם 20ג׳
-                    חלבון איכותי מהצומח
-                  </h6>
-                  <button className='blue-button'>
-                    כן, אני רוצה חבר &gt;
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div className='col p-3'>
-              <div className='friend-card'>
-                <img
-                  className='card-img-top friend-image'
-                  src={'assets/images/fr3.png'}
-                  alt='brand'
-                />
-                <div className='card-body friend-body text-center'>
-                  <h4 className='color-blue'>שייק ארוחה</h4>
-                  <h6 className='color-pink'>
-                    115 ש״ח | 100 ש״ח לחברים מועדפים
-                  </h6>
-                  <h6 className>
-                    חבר לבוקר מזין כדי להתחיל את היום הכי טוב שאפשר
-                  </h6>
-                  <button className='blue-button'>
-                    הוספת חבר לעגלה &gt;
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div className='col p-3'>
-              <div className='friend-card'>
-                <img
-                  className='card-img-top friend-image'
-                  src={'assets/images/fr2.png'}
-                  alt='brand'
-                />
-                <div className='card-body friend-body text-center'>
-                  <h4 className='color-blue'>מתוק ומזין</h4>
-                  <h6 className='color-pink'>
-                    115 ש״ח | 100 ש״ח לחברים מועדפים
-                  </h6>
-                  <h6 className>
-                    במיוחד לרגעים שהם בא לך משהו מתוק אבל חשוב לך שהוא יהיה גם
-                    מזין
-                  </h6>
-                  <button className='blue-button'>
-                    כן, אני רוצה חבר חדש &gt;
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <img
-            src={'assets/images/casebg.png'}
-            alt='case-bg'
-            className='case-bg d-none d-md-block d-lg-block'
-          />
-          <div className='row'>
-            <div className='col-12 p-5 text-center'>
-              <button className='blue-button'>מוצרים נוספים &gt;</button>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Products/>
       <div className='row mr-0 lifestyle-row'>
         <div className='col-12 p-0 lifestyle-div'>
           <img
