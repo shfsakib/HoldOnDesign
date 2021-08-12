@@ -710,10 +710,43 @@ a {
 }
 
 /* end */
+@media screen and (min-width:0) and (max-width: 768px) {
+  .carousel-item h3{
+    left: 20px;
+    top: 30px!important;
+  }
+  #carouselExampleIndicators{
+    padding-top: 20px;
+  }
+  #carouselExampleIndicators img{
+    height: 250px!important;
+    max-height: 300px !important;
+  }
+  .friend-div{
+    padding: 5px 20px 5px 35px!important;
+  }
+  .premium-div img{
+    min-height: 250px!important;
+  }
+  .lifestyle-img{
+    height: 200px!important;
+  }
+  .premium-div h4{
+    max-width:150px!important;
+    top: 30px !important;
+    font-size: 18px!important;
+  }
+  .contact-left-div{
+    padding: 50px 10px 50px 15px!important;
+  }
+  .footer-logo-div img{
+    margin: 0 5px!important;
+  }
+}
 @media screen and (min-width: 0px) and (max-width: 992px) {
   #carouselExampleIndicators img {
-    height: 300px!important;
-    max-height:300px !important;
+    height: 300px;
+    max-height:300px ;
   }
   .carousel-item h3 {
     position: absolute;
